@@ -171,7 +171,7 @@ h6 {
 
   .header~main .hero {
     margin-left: -160px;
-    width: 100vw;
+    width: calc(100% + 160px);
   }
 }
 
@@ -244,7 +244,7 @@ h6 {
   padding: 0 5px 0 7px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1199px) {
 
   .navmenu a,
   .navmenu a:focus {
@@ -621,6 +621,109 @@ section,
   line-height: 0;
 }
 
+.about .fs-logos {
+  font-size: 40px;
+}
+
+.about .logo-img {
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: background-image 0.4s, transform 0.4s;
+}
+
+.bg-tools {
+  background-color: #f9f9f9;
+}
+
+.bg-about {
+  background-image: linear-gradient(180deg, rgba(249,249,249,0), rgba(249,249,249,1));
+}
+
+.blue-icons {
+  color: var(--accent-color);
+  transition: transform 0.4s, color 0.4s;
+}
+
+.logo-scale:hover {
+  transform: scale(1.2);
+}
+
+.html-logo:hover {
+  color: #E54C21;
+}
+
+.css-logo:hover {
+  color: #214CE5;
+}
+
+.js-logo:hover {
+  color: #F0DC4E;
+}
+
+.shopify-logo:hover {
+  color: #95BF47;
+}
+
+.webflow-logo:hover {
+  color: #146EF5;
+}
+
+.angular-logo:hover {
+  color: #C4002B;
+}
+
+.react-logo:hover {
+  color: #61DBFB;
+}
+
+.ruby-logo-container {
+  background-image: url(../img/ruby-blue.png);
+}
+
+.ruby-logo-container:hover {
+  background-image: url(../img/ruby-filled.png);
+}
+
+.ror-logo-container {
+  background-image: url(../img/ruby-on-rails-blue.png);
+}
+
+.ror-logo-container:hover {
+  background-image: url(../img/ruby-on-rails.png);
+}
+
+.psql-logo-container {
+  background-image: url(../img/psql-blue.png);
+}
+
+.psql-logo-container:hover {
+  background-image: url(../img/psql-filled.png);
+}
+
+@media (min-width: 576px) {
+  .about .fs-logos {
+    font-size: 60px;
+  }
+  
+  .about .logo-img {
+    width: 60px;
+    height: 60px;
+  }  
+}
+
+@media (min-width: 992px) {
+  .about .fs-logos {
+    font-size: 80px;
+  }
+  
+  .about .logo-img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Stats Section
 --------------------------------------------------------------*/
@@ -857,6 +960,23 @@ section,
   bottom: 0;
 }
 
+.chevron {
+  background-color: #f9f9f9;
+  color: var(--nav-color);
+  border-radius: 50%;
+  width: 40px;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.chevron:hover {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+}
+
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
@@ -906,7 +1026,7 @@ section,
 
 .services .service-item p {
   line-height: 24px;
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 0;
 }
 
@@ -914,76 +1034,52 @@ section,
   box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.1);
 }
 
-.services .service-item.item-cyan i {
-  color: #0dcaf0;
+.services .service-item.item-shopify i {
+  color: #95BF47;
 }
 
-.services .service-item.item-cyan:hover .icon i {
+.services .service-item.item-shopify:hover .icon i {
   color: #fff;
 }
 
-.services .service-item.item-cyan:hover .icon path {
-  fill: #0dcaf0;
+.services .service-item.item-shopify:hover .icon path {
+  fill: #95BF47;
 }
 
-.services .service-item.item-orange i {
-  color: #fd7e14;
+.services .service-item.item-webflow i {
+  color: #146EF5;
 }
 
-.services .service-item.item-orange:hover .icon i {
+.services .service-item.item-webflow:hover .icon i {
   color: #fff;
 }
 
-.services .service-item.item-orange:hover .icon path {
-  fill: #fd7e14;
+.services .service-item.item-webflow:hover .icon path {
+  fill: #146EF5;
 }
 
-.services .service-item.item-teal i {
-  color: #20c997;
+.services .service-item.item-gold i {
+  color: #FFD700;
 }
 
-.services .service-item.item-teal:hover .icon i {
+.services .service-item.item-gold:hover .icon i {
   color: #fff;
 }
 
-.services .service-item.item-teal:hover .icon path {
-  fill: #20c997;
+.services .service-item.item-gold:hover .icon path {
+  fill: #FFD700;
 }
 
-.services .service-item.item-red i {
-  color: #df1529;
+.services .service-item.item-coral-red i {
+  color: #F54E42;
 }
 
-.services .service-item.item-red:hover .icon i {
+.services .service-item.item-coral-red:hover .icon i {
   color: #fff;
 }
 
-.services .service-item.item-red:hover .icon path {
-  fill: #df1529;
-}
-
-.services .service-item.item-indigo i {
-  color: #6610f2;
-}
-
-.services .service-item.item-indigo:hover .icon i {
-  color: #fff;
-}
-
-.services .service-item.item-indigo:hover .icon path {
-  fill: #6610f2;
-}
-
-.services .service-item.item-pink i {
-  color: #f3268c;
-}
-
-.services .service-item.item-pink:hover .icon i {
-  color: #fff;
-}
-
-.services .service-item.item-pink:hover .icon path {
-  fill: #f3268c;
+.services .service-item.item-coral-red:hover .icon path {
+  fill: #F54E42;
 }
 
 /*--------------------------------------------------------------

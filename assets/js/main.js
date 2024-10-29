@@ -34,6 +34,22 @@
   });
 
   /**
+   * Hide mobile nav en elements that are differente from the header
+   */
+  document.addEventListener('click', (e) => {
+    if (
+      e.target.id !== 'header'
+      && e.target.id !== 'navmenu'
+      && e.target.id !== 'navmenu-list'
+      && !e.target.classList.value.includes('header-toggle')
+    ) {
+      document.querySelector('#header').classList.remove('header-show');
+      headerToggleBtn.classList.remove('bi-x');
+      headerToggleBtn.classList.add('bi-list');            
+    }
+  })
+
+  /**
    * Toggle mobile nav dropdowns
    */
   document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {

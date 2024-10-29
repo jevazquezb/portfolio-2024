@@ -8,6 +8,11 @@
 
   let forms = document.querySelectorAll('.php-email-form');
 
+  /**
+   * Time in seconds for the message to be displayed.
+   */ 
+  const messageTimer = 5;
+
   forms.forEach( function(e) {
     e.addEventListener('submit', function(event) {
       event.preventDefault();
@@ -57,15 +62,18 @@
     })
     .then(response => {
       if( response.ok ) {
-        return response.text();
+        // return response.text();
+        return 'OK';
       } else {
         throw new Error(`${response.status} ${response.statusText} ${response.url}`); 
       }
     })
     .then(data => {
       thisForm.querySelector('.loading').classList.remove('d-block');
-      if (data.trim() == 'OK') {
-        thisForm.querySelector('.sent-message').classList.add('d-block');
+      if (data.trim() === 'OK') {
+        const successMessage = thisForm.querySelector('.sent-message');
+        successMessage.classList.add('d-block');
+        hideMessage(successMessage, messageTimer);
         thisForm.reset(); 
       } else {
         throw new Error(data ? data : 'Form submission failed and no error message returned from: ' + action); 
@@ -78,8 +86,16 @@
 
   function displayError(thisForm, error) {
     thisForm.querySelector('.loading').classList.remove('d-block');
-    thisForm.querySelector('.error-message').innerHTML = error;
-    thisForm.querySelector('.error-message').classList.add('d-block');
+    const errorMessage = thisForm.querySelector('.error-message');    
+    errorMessage.innerHTML = error;
+    errorMessage.classList.add('d-block');
+    hideMessage(errorMessage, messageTimer);
+  }
+
+  function hideMessage(msgElement, seconds) {
+    setTimeout(() => {
+      msgElement.classList.remove('d-block');     
+    }, 1000 * seconds);
   }
 
 })();
