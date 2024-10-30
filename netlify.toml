@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://jv-portfolio-2024.netlify.app"
+  to = "https://javb.dev"
+  status = 301
+  force = true
