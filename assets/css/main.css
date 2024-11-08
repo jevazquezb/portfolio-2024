@@ -581,6 +581,25 @@ section,
   color: var(--accent-color);
 }
 
+.hero .btn-contact {
+  font-size: 16px;
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  border: 0;
+  padding: 10px 30px;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.hero .btn-contact:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 25%);
+}
+
+.scroll-down-animation {
+  width: 23px;
+  opacity: 0.6;
+}
+
 @media (max-width: 768px) {
   .hero h2 {
     font-size: 32px;
@@ -588,6 +607,14 @@ section,
 
   .hero p {
     font-size: 20px;
+  }
+
+  .hero .btn-contact {
+    font-size: 14px;
+  }
+
+  .scroll-down-animation {
+    width: 20px;
   }
 }
 
@@ -619,6 +646,19 @@ section,
   margin-right: 5px;
   color: var(--accent-color);
   line-height: 0;
+}
+
+.profile-video-cont {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9, for an aspect ratio of 1:1 change to this value to 100% */ 
+}
+
+.profile-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .about .fs-logos {
@@ -710,7 +750,7 @@ section,
   .about .logo-img {
     width: 60px;
     height: 60px;
-  }  
+  }
 }
 
 @media (min-width: 992px) {
@@ -721,6 +761,10 @@ section,
   .about .logo-img {
     width: 80px;
     height: 80px;
+  }
+
+  .profile-video-cont {
+    padding-bottom: 0;
   }
 }
 
@@ -1080,6 +1124,11 @@ section,
 
 .services .service-item.item-coral-red:hover .icon path {
   fill: #F54E42;
+}
+
+.services .service-item ul li {
+  background-color: #ebf0ee;
+  color: #3a4a42;
 }
 
 /*--------------------------------------------------------------
