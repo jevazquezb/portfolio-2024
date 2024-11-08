@@ -50,8 +50,8 @@
       <ul id ="navmenu-list">
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
         <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
       </ul>
     </nav>
@@ -77,11 +77,17 @@
               <a href="https://github.com/jevazquezb" alt="Github icon" title="Github" target=”_blank”>
                 <i class="bi bi-github"></i>
               </a>
-              <a href="https://x.com/javb_1187" alt="Twitter-X icon" title="Twitter-X" target=”_blank”>
+              <!-- <a href="https://x.com/javb_1187" alt="Twitter-X icon" title="Twitter-X" target=”_blank”>
                 <i class="bi bi-twitter-x"></i>
-              </a>
+              </a> -->
               <a href="https://www.upwork.com/freelancers/jevazquezb" alt="Upwork icon" title="Upwork" target=”_blank”>
                 <i class="fa-brands fa-upwork"></i>
+              </a>
+            </div>
+            <div class="mt-4 d-flex align-items-center gap-5">
+              <a href="#contact" class="btn-contact">Let's Chat!</a>
+              <a href="#about" class="scroll-down-animation" title="Scroll down">
+                <dotlottie-player src="https://lottie.host/fc96e237-3844-4784-a73c-fadcb57c2e3e/KrA8AN4W5h.json" background="transparent" speed="1" loop autoplay></dotlottie-player>
               </a>
             </div>
           </div>
@@ -100,8 +106,9 @@
 
           <div class="row gy-4 justify-content-center">
 
-            <div class="col-lg-4">
-              <img src="assets/img/cafe-mirror-cropped.jpeg" class="img-fluid" alt="">
+            <div class="col-lg-4 profile-video-cont">
+              <iframe class="profile-video" src="https://www.youtube.com/embed/1jcS-yyKG7M?si=W557AUVbYr-YPpIV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <!-- <img src="assets/img/cafe-mirror-cropped.jpeg" class="img-fluid" alt=""> -->
             </div>
             <div class="col-lg-8 content text-start">
               <p class="pb-3">
@@ -174,106 +181,6 @@
 
     </section><!-- /About Section -->
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-
-      <!-- Section Title -->
-      <div class="container section-title pb-0" data-aos="fade-up">
-        <h2>Portfolio</h2>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-shopify">Shopify</li>
-            <li data-filter=".filter-javascript">JavaScript</li>
-            <li data-filter=".filter-react">React</li>
-            <li data-filter=".filter-ror">Ruby on Rails</li>
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-shopify">
-              <img src="./assets/img/portfolio/verbal-sweaters/verbal-sm-desktop.png" class="img-fluid" alt="Image from the verbal sweaters shopify store">
-              <div class="portfolio-info">
-                <h4>Verbal Sweaters</h4>
-                <p>Shopify, Liquid</p>
-                <a href="./assets/img/portfolio/verbal-sweaters/verbal-sm-desktop.png" title="Verbal Sweaters" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="./portfolio/verbal-sweaters.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-shopify">
-              <img src="./assets/img/portfolio/cacao-coffee/cacao-desktop.png" class="img-fluid" alt="Image from Cacao Coffee">
-              <div class="portfolio-info">
-                <h4>Cacao Coffee</h4>
-                <p>Shopify, Liquid</p>
-                <a href="./assets/img/portfolio/cacao-coffee/cacao-desktop.png" title="Cacao Coffee" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="./portfolio/cacao-coffee.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-javascript">
-              <img src="./assets/img/portfolio/geoenergy-congress/geoenergy-congress-sm-desktop.jpeg" class="img-fluid" alt="Image from the TV Show Network app">
-              <div class="portfolio-info">
-                <h4>Geoenergy Congress 2023</h4>
-                <p>HTML, CSS, JavaScript</p>
-                <a href="./assets/img/portfolio/geoenergy-congress/geoenergy-congress-sm-desktop.jpeg" title="Geoenergy Congress 2023" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="./portfolio/geoenergy-congress.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-javascript">
-              <img src="./assets/img/portfolio/tv-shows-network/tv-networks-sm-desktop.jpeg" class="img-fluid" alt="Image from the Geoenergy Congress 2023">
-              <div class="portfolio-info">
-                <h4>TV Shows Network</h4>
-                <p>HTML, SCSS, JavaScript</p>
-                <a href="./assets/img/portfolio/tv-shows-network/tv-networks-sm-desktop.jpeg" title="TV Shows Network" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="./portfolio/tv-network.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-react">
-              <img src="./assets/img/portfolio/bookstore-cms/bookstore-sm-desktop.jpeg" class="img-fluid" alt="Image from the Bookstore CMS web page">
-              <div class="portfolio-info">
-                <h4>Bookstore CMS</h4>
-                <p>HTML, CSS, JavaScript, React, Redux</p>
-                <a href="./assets/img/portfolio/bookstore-cms/bookstore-sm-desktop.jpeg" title="Bookstore CMS" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="./portfolio/bookstore.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-            
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-react">
-              <img src="./assets/img/portfolio/carbon-intensity/carbon-sm-desktop.jpeg" class="img-fluid" alt="Image from the Carbon Intensity website">
-              <div class="portfolio-info">
-                <h4>Carbon Intensity in the UK</h4>
-                <p>HTML, CSS, JavaScript, React, Redux</p>
-                <a href="./assets/img/portfolio/carbon-intensity/carbon-sm-desktop.jpeg" title="Carbon Intensity in the UK" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="./portfolio/carbon-intensity.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ror">
-              <img src="./assets/img/portfolio/finapp/finapp-home-mockup-wo-bg.png" class="img-fluid" alt="Image from the finapp">
-              <div class="portfolio-info">
-                <h4>Finapp</h4>
-                <p>Ruby, Ruby on Rails, PostgreSQL</p>
-                <a href="./assets/img/portfolio/finapp/finapp-home-mockup-wo-bg.png" title="Finapp" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="./portfolio/finapp.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Portfolio Section -->
-
     <!-- Services Section -->
     <section id="services" class="services section">
 
@@ -297,6 +204,16 @@
               </div>
               <h3>Shopify Development</h3>
               <p>Customize your store to build brand identity and offer a user-friendly experience to drive sales.</p>
+              <ul class="list-unstyled mt-3 d-flex justify-content-center flex-wrap gap-2">
+                <li class="badge">Account creation</li>
+                <li class="badge">Store setup</li>
+                <li class="badge">Theme development</li>
+                <li class="badge">Theme customization</li>
+                <li class="badge">App integrations</li>
+                <li class="badge">Site optimization</li>
+                <li class="badge">Maintenance & support</li>
+                <li class="badge">Training & consultation</li>
+              </ul>
             </div>
           </div><!-- End Service Item -->
 
@@ -310,6 +227,16 @@
               </div>
               <h3>Webflow Design</h3>
               <p>Create responsive and visually stunning websites without code, with powerful CMS and e-commerce integration.</p>
+              <ul class="list-unstyled mt-3 d-flex justify-content-center flex-wrap gap-2">
+                <li class="badge">Custom design & development</li>
+                <li class="badge">CMS development</li>
+                <li class="badge">E-commerce development</li>
+                <li class="badge">Migrations</li>
+                <li class="badge">API integrations</li>
+                <li class="badge">Site optimization</li>
+                <li class="badge">Maintenance & support</li>
+                <li class="badge">Training & consultation</li>
+              </ul>
             </div>
           </div><!-- End Service Item -->
 
@@ -323,6 +250,18 @@
               </div>
               <h3>Web Development</h3>
               <p>Build tailored, flexible and scalable websites with interactive user interfaces, integrated SEO, and security.</p>
+              <ul class="list-unstyled mt-3 d-flex justify-content-center flex-wrap gap-2">
+                <li class="badge">Website build-out</li>
+                <li class="badge">Responsive design</li>
+                <li class="badge">Landing page</li>
+                <li class="badge">UI/UX implementation</li>
+                <li class="badge">API integration & development</li>
+                <li class="badge">CMS development</li>
+                <li class="badge">E-commerce development</li>
+                <li class="badge">Site optimization</li>
+                <li class="badge">Maintenance & support</li>
+                <li class="badge">Training & consultation</li>
+              </ul>
             </div>
           </div><!-- End Service Item -->
 
@@ -336,6 +275,17 @@
               </div>
               <h3>Web design</h3>
               <p>Elevate user experience through intuitive design, seamless interactions, and clear messaging that engages users.</p>
+              <ul class="list-unstyled mt-3 d-flex justify-content-center flex-wrap gap-2">
+                <li class="badge">Custom design</li>
+                <li class="badge">Redesign & refresh</li>                
+                <li class="badge">Landing page</li>                
+                <li class="badge">Responsive design</li>
+                <li class="badge">UI/UX design</li>
+                <li class="badge">Graphic & logo designing</li>
+                <li class="badge">Domain & web hosting</li>
+                <li class="badge">DNS changes</li>
+                <li class="badge">Video embedding & linking</li>
+              </ul>
             </div>
           </div><!-- End Service Item -->
 
@@ -344,6 +294,107 @@
       </div>      
 
     </section><!-- /Services Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title pb-0" data-aos="fade-up">
+        <h2>Portfolio</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-shopify">Shopify</li>
+            <li data-filter=".filter-javascript">JavaScript</li>
+            <li data-filter=".filter-react">React</li>
+            <li data-filter=".filter-ror">Ruby on Rails</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-shopify">
+              <a href="./portfolio/verbal-sweaters.html" title="More Details" class="d-inline-block">
+                <img src="./assets/img/portfolio/verbal-sweaters/verbal-sm-desktop.png" class="img-fluid" alt="Image from the verbal sweaters shopify store">
+                <div class="portfolio-info">
+                  <h4>Verbal Sweaters</h4>
+                  <p>Shopify, Liquid</p>
+                  <!-- <i class="bi bi-plus-circle details-link"></i> -->
+                </div>
+              </a>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-shopify">
+              <a href="./portfolio/cacao-coffee.html" title="More Details" class="d-inline-block">
+                <img src="./assets/img/portfolio/cacao-coffee/cacao-desktop.png" class="img-fluid" alt="Image from Cacao Coffee">
+                <div class="portfolio-info">
+                  <h4>Cacao Coffee</h4>
+                  <p>Shopify, Liquid</p>
+                </div>
+              </a>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-javascript">
+              <a href="./portfolio/geoenergy-congress.html" title="More Details" class="d-inline-block">
+                <img src="./assets/img/portfolio/geoenergy-congress/geoenergy-congress-sm-desktop.jpeg" class="img-fluid" alt="Image from the TV Show Network app">
+                <div class="portfolio-info">
+                  <h4>Geoenergy Congress 2023</h4>
+                  <p>HTML, CSS, JavaScript</p>
+                </div>
+              </a>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-javascript">
+              <a href="./portfolio/tv-network.html" title="More Details" class="d-inline-block">
+                <img src="./assets/img/portfolio/tv-shows-network/tv-networks-sm-desktop.jpeg" class="img-fluid" alt="Image from the Geoenergy Congress 2023">
+                <div class="portfolio-info">
+                  <h4>TV Shows Network</h4>
+                  <p>HTML, SCSS, JavaScript</p>
+                </div>
+              </a>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-react">
+              <a href="./portfolio/bookstore.html" title="More Details" class="d-inline-block">
+                <img src="./assets/img/portfolio/bookstore-cms/bookstore-sm-desktop.jpeg" class="img-fluid" alt="Image from the Bookstore CMS web page">
+                <div class="portfolio-info">
+                  <h4>Bookstore CMS</h4>
+                  <p>HTML, CSS, JavaScript, React, Redux</p>
+                </div>
+              </a>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-react">
+              <a href="./portfolio/carbon-intensity.html" title="More Details" class="d-inline-block">
+                <img src="./assets/img/portfolio/carbon-intensity/carbon-sm-desktop.jpeg" class="img-fluid" alt="Image from the Carbon Intensity website">
+                <div class="portfolio-info">
+                  <h4>Carbon Intensity in the UK</h4>
+                  <p>HTML, CSS, JavaScript, React, Redux</p>
+                </div>
+              </a>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ror">
+              <a href="./portfolio/finapp.html" title="More Details" class="d-inline-block">
+                <img src="./assets/img/portfolio/finapp/finapp-home-mockup-wo-bg.png" class="img-fluid" alt="Image from the finapp">
+                <div class="portfolio-info">
+                  <h4>Finapp</h4>
+                  <p>Ruby, Ruby on Rails, PostgreSQL</p>
+                </div>
+              </a>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
@@ -371,7 +422,9 @@
               <i class="bi bi-envelope flex-shrink-0"></i>
               <div>
                 <h3>Email Me</h3>
-                <p>jesus.vazquez@javb.dev</p>
+                <a href="mailto: jesus.vazquez@javb.dev">
+                  <p>jesus.vazquez@javb.dev</p>
+                </a>
               </div>
             </div><!-- End Info Item -->
 
@@ -423,9 +476,9 @@
         <a href="https://github.com/jevazquezb" alt="Github icon" title="Github" target=”_blank”>
           <i class="bi bi-github"></i>
         </a>
-        <a href="https://x.com/javb_1187" alt="Twitter-X icon" title="Twitter-X" target=”_blank”>
+        <!-- <a href="https://x.com/javb_1187" alt="Twitter-X icon" title="Twitter-X" target=”_blank”>
           <i class="bi bi-twitter-x"></i>
-        </a>
+        </a> -->
         <a href="https://www.upwork.com/freelancers/jevazquezb" alt="Upwork icon" title="Upwork" target=”_blank”>
           <i class="fa-brands fa-upwork"></i>
         </a>
@@ -462,6 +515,8 @@
   <!-- Portfolio file -->
   <!-- <script src="assets/js/data-projects.js"></script> -->
 
+  <!-- Scroll down animation from Lottie Files -->
+  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script> 
 
 </body>
 
